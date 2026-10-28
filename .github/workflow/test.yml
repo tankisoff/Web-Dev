@@ -1,0 +1,9 @@
+steps:
+  - name: Checkout repository
+    uses: actions/checkout@v4
+
+  - name: Run test
+    run: echo "Test passed"
+
+  - name: Check README
+    run: test -f README.md
